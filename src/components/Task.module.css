@@ -1,0 +1,80 @@
+.tasks {
+  display: block;
+  margin-top: 4rem;
+}
+
+.taskInfos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskInfos div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.taskInfos div p {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.taskInfos div:nth-child(1) p {
+  color: var(--blue);
+}
+
+.taskInfos div:nth-child(2) p {
+  color: var(--purple);
+}
+
+.taskInfos span {
+  background: var(--gray-400);
+  color: var(--gray-200);
+  padding: 0.125rem 0.5rem;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.tasks ul {
+  margin-top: 1.5rem;
+}
+
+.tasks ul li:not(:first-child) {
+  margin-top: 0.75rem;
+}
+
+.tasks ul li {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 3.25rem;
+
+  background: var(--gray-500);
+  color: var(--gray-100);
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+}
+
+.tasks ul li p {
+  line-height: 140%;
+  font-size: 0.875rem;
+  letter-spacing: 0.019rem;
+}
+
+.tasks ul li svg {
+  fill: var(--gray-300);
+}
+
+.tasks ul li input,
+.tasks ul li svg {
+  cursor: pointer;
+}
+
+.tasks ul li svg:hover {
+  fill: var(--danger);
+  background: var(--gray-400);
+  border-radius: 4px;
+}
