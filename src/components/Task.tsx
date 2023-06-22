@@ -1,10 +1,18 @@
-import { Trash } from "@phosphor-icons/react";
+import { PlusCircle, Trash } from "@phosphor-icons/react";
 import styles from "./Task.module.css";
 
 export function Task() {
   return (
     <div className={styles.tasks}>
-      <header className={styles.taskInfos}>
+      <form className={styles.form}>
+        <input type="text" placeholder="Adicione uma nova tarefa" />
+        <button type="submit">
+          Criar
+          <PlusCircle size={18} weight="bold" />
+        </button>
+      </form>
+
+      <div className={styles.taskInfos}>
         <div>
           <p>Tarefas criadas</p>
           <span>5</span>
@@ -13,7 +21,7 @@ export function Task() {
           <p>Concluídas</p>
           <span>2 de 5</span>
         </div>
-      </header>
+      </div>
 
       <ul>
         <li>
