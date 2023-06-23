@@ -1,14 +1,14 @@
 import "./global.css";
 import styles from "./App.module.css";
 import { Header } from "./components/Header";
-import { Task } from "./components/Task";
+import { ToDo } from "./components/ToDo";
 
 export function App() {
   return (
     <>
       <Header />
       <div className={styles.container}>
-        <Task />
+        <ToDo />
       </div>
     </>
   )

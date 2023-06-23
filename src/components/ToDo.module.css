@@ -1,0 +1,93 @@
+.todos {
+  display: block;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 39.875rem 1fr;
+  gap: 0.5rem;
+  margin-top: calc(0px - 1.3rem - 6px);
+}
+
+.form>input {
+  padding: 1rem;
+  background: #262626;
+  color: var(--gray-300);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  cursor: text;
+}
+
+.form>input:focus {
+  color: var(--gray-100);
+  box-shadow: 0 0 0 2px var(--purple-dark);
+}
+
+.form>button[type=submit] {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  background: var(--blue-dark);
+  font-size: 0.875rem;
+  color: var(--gray-100);
+  font-weight: bold;
+
+  transition: background-color 0.1s;
+}
+
+.form>button[type=submit]:hover {
+  background: var(--blue);
+}
+
+.taskInfos {
+  margin-top: 4.063rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskInfos div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.taskInfos div p {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.taskInfos div:nth-child(1) p {
+  color: var(--blue);
+}
+
+.taskInfos div:nth-child(2) p {
+  color: var(--purple);
+}
+
+.taskInfos span {
+  background: var(--gray-400);
+  color: var(--gray-200);
+  padding: 0.125rem 0.5rem;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.todos ul {
+  margin-top: 1.5rem;
+}
+
+.todos ul li {
+  list-style-type: none;
+}
+
+.todos ul li:not(:first-child) {
+  margin-top: 0.75rem;
+}
