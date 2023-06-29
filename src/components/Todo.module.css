@@ -1,4 +1,4 @@
-.task {
+.todo {
   display: grid;
   grid-template-columns: 1fr 39.5rem 1fr;
   justify-content: center;
@@ -6,15 +6,15 @@
   padding: 1rem 3.25rem;
 
   background: var(--gray-500);
-  color: var(--gray-100);
   border-radius: 8px;
   border: 1px solid var(--gray-400);
 }
 
-.task p {
+.todo p {
   line-height: 1.4;
   font-size: 0.875rem;
   letter-spacing: 0.019rem;
+  color: var(--gray-100);
 
   /* add three dots when text exceed 2 lines */
   display: -webkit-box;
@@ -24,16 +24,21 @@
   text-overflow: ellipsis;
 }
 
-.task svg {
+.todo svg {
   fill: var(--gray-300);
 }
 
-.task input,
-.task svg {
+.todo input[type=checkbox],
+.todo svg {
   cursor: pointer;
 }
 
-.task svg:hover {
+.todo input[type=checkbox]:checked+p {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.todo input .todo svg:hover {
   fill: var(--danger);
   background: var(--gray-400);
   border-radius: 4px;

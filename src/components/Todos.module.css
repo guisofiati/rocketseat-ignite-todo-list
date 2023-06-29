@@ -44,34 +44,34 @@
   background: var(--blue);
 }
 
-.taskInfos {
+.todoInfo {
   margin-top: 4.063rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.taskInfos div {
+.todoInfo div {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
 }
 
-.taskInfos div p {
+.todoInfo div p {
   font-size: 0.875rem;
   font-weight: bold;
 }
 
-.taskInfos div:nth-child(1) p {
+.todoInfo div:nth-child(1) p {
   color: var(--blue);
 }
 
-.taskInfos div:nth-child(2) p {
+.todoInfo div:nth-child(2) p {
   color: var(--purple);
 }
 
-.taskInfos span {
+.todoInfo span {
   background: var(--gray-400);
   color: var(--gray-200);
   padding: 0.125rem 0.5rem;
