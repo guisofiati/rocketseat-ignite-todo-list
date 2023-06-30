@@ -91,3 +91,9 @@
 .todos ul li:not(:first-child) {
   margin-top: 0.75rem;
 }
+
+@media (max-width: 768px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}

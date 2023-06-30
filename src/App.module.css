@@ -3,3 +3,13 @@
   max-width: 46rem;
   margin: 0 auto 17.625rem;
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .container {
+    margin: 1rem;
+  }
+}
